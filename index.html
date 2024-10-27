@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Voice It.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <h1>Voice It.</h1>
+                <h2>Text to Speech Generator</h2>
+            </div>
+
+            <select id="voices"></select>
+                <option value="" disabled selected>Choose your Voice</option>
+                <option value="" disabled selected></option>
+
+            <select id="language">
+                <option value="en-US">US English</option>
+                <option value="es-ES">Español</option>
+                <option value="it-IT">Italiano</option>
+                <option value="ko-KR">Korean</option>
+                <option value="zh-CN">Chinese Mandarin</option>
+                <option value="ja-JP">Japanese</option>
+                <option value="ru-RU">Russian</option>
+                <option value="de-DE">Deutsch</option>
+            </select>
+            <option value="" disabled selected>Choose your Language</option>
+            <option value="" disabled selected></option>
+
+            <label id="rate">Rate:</label>
+            <input type="range" min="0" max="3" step="0.1">
+
+            <label id="pitch">Pitch:</label>
+            <input type="range" min="0" max="2" step="0.1">
+
+            <label id="volume">Volume:</label>
+            <input type="range" min="0" max="100" step="1">
+
+            <textarea id="text">Welcome to Voice It. Your One-stop Text-to-speech Generator.</textarea>
+
+            <div class="buttons">
+                <button id="stop-button">Stop</button>
+                <button id="speak-button">Speak</button>
+            </div>
+        </main>
+    </body>
+</html>
